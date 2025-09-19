@@ -11,14 +11,15 @@ package basics;
 public class Data_types_intro_L1 {
     
     public static void main(String[] args) {
-        // أنواع البيانات الأساسية في Java
-        int number = 10;                  // عدد صحيح
-        double pi = 3.14;                 // عدد عشري
-        char letter = 'A';                // حرف
-        boolean isJavaFun = true;         // قيمة منطقية
-        String message = "Hello Java!";   // نص (سلسلة حروف)
+       
+        
+        int number = 10;                   
+        double pi = 3.14;                  
+        char letter = 'A';                 
+        boolean isJavaFun = true;           
+        String message = "Hello Java!";     
 
-        // الطباعة
+         
         System.out.println("Number: " + number);
         System.out.println("Pi: " + pi);
         System.out.println("Letter: " + letter);
