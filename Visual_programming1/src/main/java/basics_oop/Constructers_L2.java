@@ -8,6 +8,6 @@ package basics_oop;
  *
  * @author memom
  */
-public class collage_lectureCode_intro {
+public class Constructers_L2 {
     
 }
