@@ -46,7 +46,8 @@ class pizza {
     }
     // toString is inbulit function that return the addres of object  pizaa = pizaa.toStrint() = address 
     // over writing it like this will be like pizaa = pizaa.toStrint() = allAtrib
-     String toStrintg(){
+    // public is a must
+     public String toString(){
             String allAtrib = "\nIngredients are : \n" + 
                  "bread : " + bread + "\n" 
                  + "sauce : " + sauce + "\n"
@@ -69,6 +70,8 @@ public class Constructers_L2 {
         dish.getall();
         pizza dish1 = new pizza();
         dish1.getall();
+        System.out.println(dish.toString());
+        System.out.println("print the name of object :");
         System.out.println(dish);
         
 
