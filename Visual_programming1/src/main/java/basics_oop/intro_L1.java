@@ -36,7 +36,6 @@ System.out.println();
 System.out.println(myCar2.make);
 System.out.println(myCar2.model);
 myCar2.drive();
-
     }
     
 }
