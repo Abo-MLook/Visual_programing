@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package basics;
 
-/**
- *
- * @author memom
- */
+
 public class Data_types_intro_L1 {
     
     public static void main(String[] args) {

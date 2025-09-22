@@ -3,7 +3,7 @@ package basics_oop;
 
 
 
- class Car {
+ class Car1 {
 
     String make = "Chevrolet";
     String model = "Corvette";
@@ -25,8 +25,8 @@ package basics_oop;
 // main -------------------------------
 public class intro_L1 {
     public static void main(String[] args) {
-        Car myCar1 = new Car();
-        Car myCar2 = new Car();
+        Car1 myCar1 = new Car1();
+        Car1 myCar2 = new Car1();
 
 System.out.println(myCar1.make);
 System.out.println(myCar1.model);
