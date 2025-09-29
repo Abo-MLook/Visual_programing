@@ -1,14 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package basics_oop;
 
-/**
- *
- * @author memom
- */
-//****************************************main
+
 public class Abstraction__L7 {
 
     public static void main(String[] args) {
@@ -27,15 +20,18 @@ public class Abstraction__L7 {
 abstract class Vehicle {
     // atirbutes of any Vehicle.... 
 
-    abstract void go();
+     void go(){
+        System.out.println("The driver is driving the car");
+
+    }
 }
 //****************************************
 
 class Vcar extends Vehicle {
 
-    @Override // must be
+     // must be
     void go() {
-        System.out.println("The driver is driving the car");
+        System.out.println("The driver is stopping the car");
 
     }
 }

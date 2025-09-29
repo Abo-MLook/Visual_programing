@@ -33,8 +33,9 @@ class pizza {
         cheese = scanner.nextLine();
         System.out.print("topping : ");
         topping = scanner.nextLine();
+        
     }
-
+    
     void getall() {
         System.out.println("\nIngredients are : ");
         System.out.println("bread : " + bread);
