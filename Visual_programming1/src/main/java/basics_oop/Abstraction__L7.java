@@ -29,6 +29,8 @@ abstract class Vehicle {
         System.out.println("The driver is stopping the Vehicle");
 
     }
+     
+    abstract  void type();
 }
 //****************************************
 
@@ -45,5 +47,9 @@ class Vcar extends Vehicle {
         System.out.println("The driver is stopping the car");
 
     }
+    
+   void type(){
+       System.out.println("the type is toyota");
+   }
 }
 //***************************************

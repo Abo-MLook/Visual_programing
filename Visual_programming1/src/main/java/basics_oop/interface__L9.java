@@ -36,6 +36,9 @@ public class interface__L9 {
     }
 }
 
+//n interface is like a contract: it specifies what a class must do, but not how it does it.It’s 100% abstract
+
+
 // ===== top-level types in the SAME FILE =====
 interface Prey {
 

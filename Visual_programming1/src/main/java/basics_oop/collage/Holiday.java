@@ -36,8 +36,8 @@ public class Holiday {
         new Holiday[]{var1, new Holiday("Christmas", 25, "December"),
         new Holiday("New Year", 1, "January"), new Holiday("Another July Holiday", 14, "July")};
         System.out.println("Average date: " + avgDate(var2));
-        PrintStream var10000 = System.out;
+        PrintStream c = System.out;
         boolean var10001 = var1.inSameMonth(var2[3]);
-        var10000.println("Same month? " + var10001);
+        c.println("Same month? " + var10001);
     }
 }
