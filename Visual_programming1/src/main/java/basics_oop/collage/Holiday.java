@@ -1,5 +1,5 @@
 
-package basics_oop.Thoretical;
+package basics_oop.collage;
 
 
 
