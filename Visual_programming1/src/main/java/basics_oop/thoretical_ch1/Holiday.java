@@ -1,5 +1,5 @@
 
-package basics_oop.thoretical;
+package basics_oop.thoretical_ch1;
 
 
 
