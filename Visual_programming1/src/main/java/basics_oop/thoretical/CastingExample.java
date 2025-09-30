@@ -1,5 +1,5 @@
 
-package basics_oop.collage;
+package basics_oop.thoretical;
 
 //slide  31
 

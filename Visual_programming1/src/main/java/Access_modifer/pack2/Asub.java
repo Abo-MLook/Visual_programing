@@ -10,8 +10,9 @@ public class Asub extends A {
         C oc = new C();
         System.out.println(oc.defualta); // can be access because in same package
         
-        A oa = new A();
-        System.out.println(oa.protectedMassageA);
+        Asub oa = new Asub();
+        System.out.println(oa.protectedMassageA); // access becase it is protected and subclass
         
+        //System.out.println(oc.privateMassage); only access on class c becasue it is private even if same package can not be access!!
     }
 }
