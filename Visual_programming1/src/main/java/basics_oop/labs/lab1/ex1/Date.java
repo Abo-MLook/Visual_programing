@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package basics_oop.labs.lab1.ex1;
 
-/**
- *
- * @author memom
- */
 public class Date {
+
+    private int day, month, year;
+
+    public Date(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+    }
+
+    @Override
+    public String toString() {
+        return "Date : [" + year + "/" + month + "/" + day;
+    }
+    
     
 }
