@@ -22,6 +22,7 @@ public class polymorphism__L10 {
         for (VehicleL10 x : racers) {
             x.go();
         }
+       
     }
 }
 
@@ -44,6 +45,9 @@ class BicycleL10 extends VehicleL10 {
     @Override
     public void go() {
         System.out.println("*The bicycle begins moving*");
+    }
+    void ao() {
+        System.out.println("awa*");
     }
 }
 

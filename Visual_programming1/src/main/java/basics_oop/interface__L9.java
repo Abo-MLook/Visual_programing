@@ -23,7 +23,6 @@ public class interface__L9 {
         // Polymorphic lists by interface type:
         List<Prey> preys = List.of(rabbit, fish);
         List<Predator> predators = List.of(hawk, fish, wolf);
-
         System.out.println("All preys flee:");
         for (Prey p : preys) {
             p.flee();

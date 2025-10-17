@@ -8,7 +8,7 @@ public class Abstraction__L7 {
 
         //Vehicle vehicle = new Vehicle();  // error 
         Vehicle car = new Vcar(); // force the user to choose a Vehicle 
-        // Vcar car = new car() will work but above it is // Polymorphism
+        // Vcar car = new Vcar() will work but above it is // Polymorphism
 
         car.go();
         car.stoping();
@@ -48,6 +48,7 @@ class Vcar extends Vehicle {
 
     }
     
+    // not writing this will cause an error because in parent it is abstract
    void type(){
        System.out.println("the type is toyota");
    }

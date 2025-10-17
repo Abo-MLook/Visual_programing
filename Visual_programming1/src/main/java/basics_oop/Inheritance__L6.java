@@ -14,7 +14,7 @@ public class Inheritance__L6 {
 		Hero hero1 = new Hero("Batman",42,"$$$");
 		Hero hero2 = new Hero("Superman",43,"everything");
 		
-		System.out.println(hero2.toString());
+		System.out.println(hero2);
 		
 	}
 }

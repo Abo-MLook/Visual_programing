@@ -1,7 +1,7 @@
 
 package basics_oop.thoretical_ch1;
 
-//slide  31
+//slide 31
 
 class Point {
     int x, y;

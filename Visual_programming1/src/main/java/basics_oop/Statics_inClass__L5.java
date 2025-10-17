@@ -7,13 +7,13 @@ public class Statics_inClass__L5 {
         // static = modifier. A single copy of a variable/method is created and (((shared))).
         //			The class "owns" the static member
         Friend friend1 = new Friend("Sponegbob");
-        System.out.println(Friend.numberOfFriends);
+        System.out.println(friend1.numberOfFriends);
         
         Friend friend2 = new Friend("Patrick");
-        System.out.println(Friend.numberOfFriends);
+        System.out.println(friend2.numberOfFriends);
         
         Friend friend3 = new Friend("ippo");
-        System.out.println(Friend.numberOfFriends);
+        System.out.println(friend3.numberOfFriends);
     }
 }
 //**********************************************
@@ -22,7 +22,7 @@ class Friend {
 
     String name;
 
-    static int numberOfFriends;
+    static int numberOfFriends = 0;
 
     Friend(String name) {
         this.name = name;
