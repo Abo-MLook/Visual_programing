@@ -10,7 +10,7 @@ public class Abstraction__L7 {
         Vehicle car = new Vcar(); // force the user to choose a Vehicle 
         // Vcar car = new Vcar() will work but above it is // Polymorphism
 
-        car.go();
+       
         car.stoping();
     }
 }
@@ -22,7 +22,7 @@ public class Abstraction__L7 {
 abstract class Vehicle {
     // atirbutes of any Vehicle.... 
     void go() {
-        System.out.println("The driver is stopping the Vehicle");
+        
 
     }
      void stoping(){
@@ -37,11 +37,8 @@ abstract class Vehicle {
 class Vcar extends Vehicle {
 
      // must be
-    @Override
-    void go() {
-        System.out.println("The driver is stopping the car");
-
-    }
+    
+    
     @Override
     void stoping(){
         System.out.println("The driver is stopping the car");

@@ -1,5 +1,5 @@
 package basics_oop.thoretical_ch1.Exeption_handling;
-
+//lab1_ex6
 public class Exemple1 {
 
     public static void validate_y(int y) throws DivisionOnZeroException {

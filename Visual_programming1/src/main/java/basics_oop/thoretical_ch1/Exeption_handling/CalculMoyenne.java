@@ -1,6 +1,7 @@
 
 package basics_oop.thoretical_ch1.Exeption_handling;
 
+//lab1_ex6
 
 public class CalculMoyenne {
     private static int moyenne(String[] list) throws ExceptionEmpty {
@@ -28,9 +29,9 @@ public class CalculMoyenne {
     }
 
     public static void main(String[] args) {
-        //String[] tab = { "14", "12", "13", "16", "18", "15" }; // 1 : no exception everything is good
-        //String[] tab = { "x", "2", "-1", "30", "18" }; // 2       :  Number format exception ,and range low ,and larg exception
-        String[] tab = { "x", "-3", "2.3" }; // 3               :  Number format exception, and range low ,Number format exception
+        //String[] tab = { "14", "12", "13", "16", "18", "15" }; // 1 ; answer : no exception everything is good
+        //String[] tab = { "x", "2", "-1", "30", "18" }; // 2      ; answer :  Number format exception ,and range low ,and larg exception
+        String[] tab = { "x", "-3", "2.3" }; // 3               ; answer   :  Number format exception, and range low ,Number format exception
         try {
             System.out.println("The average is: " + moyenne(tab));
         } catch (ExceptionEmpty er) {
