@@ -19,5 +19,6 @@ public class Data_types_intro_L1 {
         System.out.println("Letter: " + letter);
         System.out.println("Is Java Fun? " + isJavaFun);
         System.out.println("Message: " + message);
+        
     }
 }
