@@ -46,6 +46,7 @@ class Vcar extends Vehicle {
     }
     
     // not writing this will cause an error because in parent it is abstract
+    
    void type(){
        System.out.println("the type is toyota");
    }
