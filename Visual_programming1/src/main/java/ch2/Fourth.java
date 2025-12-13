@@ -68,7 +68,7 @@ public class Fourth extends JFrame {
         j7.add(a1);
         j7.add(a2);
 
-        JPanel main_p = (JPanel) this.getContentPane();
+        JPanel main_p = (JPanel)this.getContentPane();
         main_p.setLayout(new GridLayout(7, 1));
 
         main_p.add(j1);
@@ -80,7 +80,7 @@ public class Fourth extends JFrame {
         main_p.add(j6);
 
         this.pack();
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
 
