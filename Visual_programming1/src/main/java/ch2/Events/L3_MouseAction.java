@@ -29,7 +29,7 @@ int counter = 0;
     
     
     
-        j1.addMouseListener(new mouseClickCounter());
+        this.addMouseListener(new mouseClickCounter());
  
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.pack();
