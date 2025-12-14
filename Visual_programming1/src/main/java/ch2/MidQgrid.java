@@ -73,9 +73,11 @@ public class MidQgrid extends JFrame {
         p2.add(b1);
         p2.add(b2);
         
-        mainp.add(p1);
-        mainp.add(p2,BorderLayout.SOUTH);
+        /*mainp.add(p1);
+        mainp.add(p2,BorderLayout.SOUTH);*/
         
+        mainp.add(p1,BorderLayout.NORTH);
+        mainp.add(p2,BorderLayout.CENTER);
       
         
 
@@ -84,7 +86,7 @@ public class MidQgrid extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
-        this.setLocation(500, 500);
+        this.setLocation(1000, 500);
     }
 
     public static void main(String[] args) {
