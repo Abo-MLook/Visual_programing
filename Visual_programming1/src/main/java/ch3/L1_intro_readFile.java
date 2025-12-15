@@ -4,7 +4,14 @@ package ch3;
 import java.io.*;
 public class L1_intro_readFile {
     
-    
+    // This program demonstrates two ways to read data from a file in Java.
+
+// The first part uses FileReader to read the file character by character and prints each character to the console.
+// It handles exceptions like FileNotFoundException (if the file doesn't exist) and IOException (for general I/O errors).
+
+// The second part uses BufferedReader to read the file line by line and prints each line to the console.
+// Similar exception handling is applied for file not found and I/O errors.
+
     
     public static void main(String[] args) {
         System.out.println("reading character , using normal reading : ");
@@ -29,7 +36,7 @@ public class L1_intro_readFile {
                 
                 
              try {
-            BufferedReader f1 = new BufferedReader(new FileReader("E:\\work\\AI\\Python\\Python traing\\Visual programming\\Visual_programming1\\src\\main\\java\\ch3\\CS342.txt"));
+            BufferedReader f1 = new BufferedReader(new FileReader("CS342.txt"));
             
             String st;
             
