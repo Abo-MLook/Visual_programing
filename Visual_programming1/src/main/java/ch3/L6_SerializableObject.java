@@ -4,10 +4,15 @@
  */
 package ch3;
 
-/**
- *
- * @author memom
- */
-public class L6_SerializableObject {
-    
+
+import java.io. *;
+public class L6_SerializableObject implements Serializable {
+ private int abscissa, ordinate;
+ public L6_SerializableObject (int x, int y) {
+ abscissa = x;
+ ordinate= y;
+ }
+ public int getAbscissa(){
+ return abscissa;
+ }
 }
