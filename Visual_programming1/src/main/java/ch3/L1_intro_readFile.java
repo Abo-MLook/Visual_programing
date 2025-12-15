@@ -28,8 +28,8 @@ public class L1_intro_readFile {
         } catch (FileNotFoundException e) {
             System.out.println("not there");
         }
-        catch(IOException e){ System.out.println("input or read error");}
         
+        catch(IOException e){ System.out.println("input or read error");}
         
         
                 System.out.println("\nreading line by line  , using buffered reader class : ");
@@ -37,7 +37,7 @@ public class L1_intro_readFile {
                 
              try {
             BufferedReader f1 = new BufferedReader(new FileReader("CS342.txt"));
-            h
+            
             String st;
             
                  while ((st = f1.readLine()) != null) {
