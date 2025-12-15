@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package ch3;
 import java.io.*;
 
@@ -42,3 +39,14 @@ private String source ;
  }
     
 }
+
+
+// This program defines a class L2_readfile_withClass that reads a file line by line using BufferedReader.
+
+// The constructor takes a file path as input and stores it in the 'source' variable.
+
+// The 'reading' method reads each line from the file and prints it to the console. It handles exceptions 
+// like FileNotFoundException (if the file path is incorrect) and IOException (for general I/O errors).
+
+// In the main method, an object of L2_readfile_withClass is created with the file path "CS342.txt" and 
+// the reading method is called to display the file contents.

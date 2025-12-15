@@ -37,7 +37,7 @@ public class L1_intro_readFile {
                 
              try {
             BufferedReader f1 = new BufferedReader(new FileReader("CS342.txt"));
-            
+            h
             String st;
             
                  while ((st = f1.readLine()) != null) {

@@ -1,4 +1,4 @@
-package ch2;
+package ch3;
 
 import javax.swing.*;
 import java.awt.*;
@@ -56,10 +56,11 @@ public class Homewoork extends JFrame implements ActionListener {
         String ac = ev.getActionCommand();
 
         if (ac.equals("New")) {
-            textAr.setText("Start...");
+            textAr.setText("");
         } else if (ac.equals("Open")) {
-            int choice = fileC.showOpenDialog(null);
-            if (choice == JFileChooser.APPROVE_OPTION) {
+            int choice = fileC.showOpenDialog(null); // return open to 0 
+            if (choice == JFileChooser.APPROVE_OPTION) {  // aprove =0 ,  0 ==0
+                
                 File sel = fileC.getSelectedFile();
                 try {
                     BufferedReader read1 = new BufferedReader(new FileReader(sel));
