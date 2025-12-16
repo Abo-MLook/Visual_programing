@@ -16,14 +16,17 @@ public class Task implements Runnable {
     
     @Override
     public  void run(){
-        
-        this.p.scale(this.x, this.y);
+        synchronized (p) {
+             this.p.scale(this.x, this.y);
         System.out.println(this.p);
+        }
+       
     }
     public static void main(String[] args) {
         Point p = new Point(3, 2);
+                Thread t2 = new Thread (new Task(p, 3, 4));
+
         Thread t1 = new Thread(new Task(p, 2, 1));
-        Thread t2 = new Thread (new Task(p, 3, 4));
         t1.start();
         t2.start();
     }

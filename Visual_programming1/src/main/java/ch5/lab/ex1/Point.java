@@ -10,7 +10,7 @@ public  class Point {
     
     public Point(int x,int y){this.x=x;this.y = y;}
     
-   synchronized void scale(int dx,int dy){
+    void scale(int dx,int dy){
     this.x +=dx;
     this.y +=dy;
     }
