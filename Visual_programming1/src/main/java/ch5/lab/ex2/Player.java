@@ -6,23 +6,18 @@ package ch5.lab.ex2;
 
 public class Player extends Thread {
 
-    private String name;
-    private String prediction;
+    private String name, prediction;
     private int number;
     private boolean hasChosen;
     private Player opponent;
 
     public Player(String name, String prediction) {
-// ………………… ..
-    this.name = name;
-    this.prediction = prediction;
-    this.hasChosen = false; 
-    
+        this.name = name;
+        this.prediction = prediction;
     }
 
     public void setOpponent(Player opponent) {
         this.opponent = opponent;
-
     }
 
     public void run() {
@@ -32,34 +27,31 @@ public class Player extends Thread {
             System.out.println(ie.getMessage());
         }
         number = (int) (Math.random() * 6);
-        hasChosen = true;
-        synchronized(this){
-        notify();
-        }
-        while (!this.opponent.hasChosen) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
+        this.hasChosen = true;
+        if (!this.opponent.hasChosen) {
+            synchronized (this) {
+                try {
+                    this.wait();
+                } catch (InterruptedException ex) {
+                    System.out.println(ex.getMessage());
+                }
             }
-            
         }
-            
-  
-        int sum = (this.number + this.opponent.number) % 2;
-        if (sum ==0) {
-            if(this.prediction.equals("even"));
-            System.out.println(this.name+"is the winner "+ this.opponent.name + "is the loser");
-            if(this.opponent.prediction.equals("even"));
-            System.out.println(this.opponent.name+"is the winner "+ this.name + "is the loser");
-        }
-        else{
-            if(this.prediction.equals("odd"));
-            System.out.println(this.name+"is the winner "+ this.opponent.name + "is the loser");
-            if(this.opponent.prediction.equals("odd"));
-            System.out.println(this.opponent.name+"is the winner "+ this.name + "is the loser");
-        }
-        
+        int rest = (this.number + this.opponent.number) % 2;
+        if (rest == 0) {
+            if (this.prediction.equals("even")) {
+                System.out.println(this.name + "is the winner and " + this.opponent.name + " is looser");
+            }
 
+        } else {
+            if (this.prediction.equals("odd")) {
+                System.out.println(this.name + "is the winner and " + this.opponent.name + " is looser");
+            }
+
+        }
+        synchronized (this.opponent) {
+            this.opponent.notify();
+        }
     }
 
     public static void main(String args[]) {
