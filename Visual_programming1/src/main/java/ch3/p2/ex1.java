@@ -57,3 +57,10 @@ public class ex1 {
 
     }
 }
+
+
+// This program collects personal information (last name, first name, and year of birth) from the user and writes it to a file named "People.txt".
+// The user is prompted for the last name, first name, and year of birth, with input validation to ensure the correct data type is entered.
+// If the user enters incorrect data (e.g., non-string input for names or non-integer input for the year of birth), they are asked to re-enter the information.
+// After entering the data, it is written to the "People.txt" file in the format "last_name;first_name;year_of_birth".
+// The program continues prompting the user for additional entries until they choose to stop by entering "n" when asked if they want to continue.
