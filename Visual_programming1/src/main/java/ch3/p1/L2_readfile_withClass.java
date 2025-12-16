@@ -1,5 +1,5 @@
 
-package ch3;
+package ch3.p1;
 import java.io.*;
 
 public class L2_readfile_withClass {

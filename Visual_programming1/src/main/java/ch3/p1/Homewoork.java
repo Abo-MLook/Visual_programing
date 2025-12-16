@@ -1,4 +1,4 @@
-package ch3;
+package ch3.p1;
 
 import javax.swing.*;
 import java.awt.*;
